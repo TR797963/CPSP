@@ -1,9 +1,4 @@
-# CPSP — minimal runnable code
-
-通道极化（CP）与全局结构化剪枝的最小实现，支持 **DNANet、UIUNet、ISNet**。
-Built on [BasicIRSTD](https://github.com/XinyiYing/BasicIRSTD).
-内置三个模型的必需上游源码，保留原字节与署名；CPSP 作为外部剪枝流程使用，
-不编辑 backbone 源码。详见 [致谢](ACKNOWLEDGEMENTS.md)。
+# CPSP
 
 ## 1. 环境
 
