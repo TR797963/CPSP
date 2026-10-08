@@ -1,0 +1,18 @@
+{
+  "source": "https://github.com/XinyiYing/BasicIRSTD",
+  "files": {
+    "loss.py": "08508b95f215e86381e810d57bf184120e4f5e883b1e4d38672491a636a671c5",
+    "model/DNANet/model_DNANet.py": "8712b7b1b913bd6d303ef53aa180f9dc6af3b0dcab5ffd5994711bf660a083c0",
+    "model/ISNet/DCNv2/TTOA.py": "2be5e16f0933b7e5b90ce025bde52af62d919ad7779ecbf279406a31582fe9ee",
+    "model/ISNet/config.py": "2f83f736406e6e19555c59128153b64fde2f21404e66c3726f4a3b13b6dad248",
+    "model/ISNet/model_ISNet.py": "ecf6700718bfcd5544daa36d22b9f0cbf7dec066ef839c3f8c7819e1739bab42",
+    "model/ISNet/my_functionals/GatedSpatialConv.py": "42d826e95dbaf5196fc6134d3306186f1d05095949772b591cb36cf391faf867",
+    "model/ISNet/my_functionals/custom_functional.py": "0f1d22f15e3d48af4516f38835922e61bca1570528c2a2ec37092a91631e7175",
+    "model/ISNet/network/Resnet.py": "f3b4990d8909145fa9e97922daeb0a519af5e0aea6e3fa59c6965d70b58e49d3",
+    "model/ISNet/network/mynn.py": "db3c4652ddd5a9569e4567f0b1de779142df3a6625c55ca85de108cf492a8288",
+    "model/ISNet/utils/AttrDict.py": "0a7f8e41779e09968b9aebf3da55b6e9a6ddae1f4d97301d00ea693e2eb25225",
+    "model/UIUNet/fusion.py": "b772d5a7fbfa3237bd688561e1026eb91e7bbc0bde03d62eec552d214c83f3fb",
+    "model/UIUNet/model_UIUNet.py": "06bc11ad27fdac4f4d4841965aea355d85ad99614384b1dab9b6fdde7a6b4b2f",
+    "utils.py": "fe1f9752b74b7ed21144e50def14f0f1569d32a2596c86971ed7262df1679121"
+  }
+}

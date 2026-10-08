@@ -1,0 +1,81 @@
+# Generic public-release configuration. Model and dataset can be overridden by CLI.
+model: DNANet
+dataset: IRSTD-1K
+dataset_dir: ./datasets
+batch_size: 16
+patch_size: 256
+epochs: 100
+lr: 0.0005
+seed: 42
+device: cuda
+save_dir: ./experiments
+experiment_name: cpsp_default
+mode: baseline_train
+pretrained: null
+resume: null
+val_every: 1
+save_best_metric: mIoU
+save_every_epoch_ckpt: false
+num_workers: 0
+threshold: 0.5
+optimizer_name: Adam
+scheduler_name: MultiStepLR
+scheduler_milestones: [60, 80]
+scheduler_gamma: 0.1
+scheduler_min_lr: 1.0e-05
+img_norm_cfg_mean: null
+img_norm_cfg_std: null
+img_norm_cfg: null
+
+ocp_enable: false
+ocp_layers: []
+lambda_pol: 0.01
+lambda_pre: 0.001
+ocp_stat_subset: 256
+ocp_warmup_epochs: 10
+ocp_compute_interval: 1
+min_valid_target_pixels: 0.001
+ocp_loss_clip: 5.0
+ocp_mapping_strategy: stage_then_nearest
+ocp_layer_selection_strategy: per_stage_representative
+max_ocp_layers: 6
+auto_select_ocp_layers: true
+
+pruning_method: ours
+pruning_rates: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+pruning_layers: []
+pruning_layer_selection_strategy: safe_bn_conv
+auto_select_pruning_layers: true
+min_prunable_channels: 16
+exclude_first_conv: true
+exclude_last_head: true
+allow_group_conv_pruning: false
+allow_depthwise_pruning: false
+dry_run_pruning_plan: true
+finetune_epochs: 40
+finetune_lr: 0.0001
+slim_bn_only: true
+slim_regularization_enable: false
+slim_lambda: 0.0001
+pruning_score_source: ours_slim
+
+global_prune_ratio: [0.7]
+global_planner: cost_aware_global
+target_aware_beta: 0.5
+structural_gain_alpha: 0.0
+min_remaining_channels_per_layer: 8
+max_layer_prune_ratio: 0.8
+layer_prune_cap_rules: []
+layer_min_remaining_rules: []
+min_layer_prune_ratio: 0.0
+adaptive_budget_strategy: weighted_waterfill
+layer_prunability_metric: combined
+budget_smoothing: 1.0
+budget_rounding_mode: round
+dry_run_budget_check: true
+
+collapse_metric: mIoU
+collapse_ratio_threshold: 0.15
+inference_speed_repeats: 50
+save_predictions: false
+analysis_compare_with: null

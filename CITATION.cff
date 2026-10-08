@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use CPSP, please cite the ACM Multimedia 2026 paper."
+title: "CPSP: Channel Polarization and Global-Budget Structured Pruning for Infrared Small Target Detection"
+type: software
+authors:
+  - family-names: Xu
+    given-names: Qian
+  - family-names: Li
+    given-names: Xi
+  - family-names: Gao
+    given-names: Fei
+  - family-names: Zhang
+    given-names: Qiming
+  - family-names: Zhang
+    given-names: Mingjin
+date-released: 2026-09-17
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "CPSP: Channel Polarization and Global-Budget Structured Pruning for Infrared Small Target Detection"
+  authors:
+    - family-names: Xu
+      given-names: Qian
+    - family-names: Li
+      given-names: Xi
+    - family-names: Gao
+      given-names: Fei
+    - family-names: Zhang
+      given-names: Qiming
+    - family-names: Zhang
+      given-names: Mingjin
+  collection-title: "Proceedings of the 34th ACM International Conference on Multimedia"
+  year: 2026
